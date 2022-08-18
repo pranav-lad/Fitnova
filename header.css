@@ -1,0 +1,106 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 15vh;
+    font-family: 'josefins sans',sans-serif;
+    scroll-behavior: smooth;
+}
+
+.view
+{
+    height: 100%;
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.view h1{
+    position: absolute;
+    top:55%;
+    left:30%;
+}
+.fixed-top
+{
+    padding: 20px 0 2px 8px;
+}
+.fixed-top .navbar-nav li a{
+    font-size: 19px;
+    color:white !important;
+    transition: .5s ease-in-out;
+}
+.fixed-top .navbar-nav li a:hover
+{
+    color:yellow !important;
+}
+@media screen and (max-width:767px)
+{
+ .navbar-dark
+ {
+    background-color: orange;
+ }
+}
+@media (min-width: 768px)/*newly added*/
+{ 
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 2.5rem;
+    padding-left: 0.5rem;
+}
+}
+#main-bar{
+    position: absolute;
+    width: 100%;
+    top:9%;
+    position: fixed;
+    z-index: 1;
+    /* padding: 0px 56px 12px 574px; */
+}
+#main-bar .nav-item
+{
+    margin-left: 10px;
+    font-size: 17px;
+}
+#main-bar a{
+    font-size: 25px;
+    font-family: math;
+}
+.nav-color
+{
+    background-color: rgb(86, 249, 86);
+    color: white;
+}
+@media (min-width: 768px)
+{
+.navbar-center { /*newly added*/
+    /* -ms-flex-direction: row; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: -7px auto;
+}
+}
+.bg-light {
+    background-color: #ceecee!important;
+}
+@media (max-width: 769px)
+{ 
+	#main-bar
+	{ 
+ 
+       top:13%;
+       display: none;
+    /*padding: 0px -3px 4px 2px;*/
+	 }
+    header {
+        height: 9vh;
+    }
+}
+.nav1-items a, .nav1-items button
+{
+	color:white;
+	font-weight: 200;
+	font-size: 15px;
+}
